@@ -41,19 +41,21 @@ ul li.selected a {
 }
 
 select {
-  width: 84%;
+  /*change from 84% to 94%, 10%difference is from the button width below of 10%*/
+  width: 94%;
   margin: 11px  0 11px 2%;
   float: left;
 }
 
-button {
+/*Dont need this anymore as we delete the button*/
+/*button {
   display: inline-block;
   line-height: 18px;
   padding: 0 5px;
   margin: 11px 2% 11px 0;
   float: right;
   width: 10%;
-}
+}*/
 h1 {
   margin: 40px 0 10px;
   text-align: center;
