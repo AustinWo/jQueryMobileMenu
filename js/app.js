@@ -29,12 +29,14 @@ $('#menu a').each(function () {
   $select.append($option);
 });
 
-
-// Create button
-var $button = $('<button>Go</button>');
-$('#menu').append($button);
+// Changed our mind, dont want to create a button anymore
+  // // Create button
+  // var $button = $('<button>Go</button>');
+  // $('#menu').append($button);
 // Blind click to button
-$button.click(function(){
+
+//Bind change listener to the selected drop-down option
+$select.change(function(){
   // go to select's location -> change location of the browser using window.location = something
   window.location = $select.val();
 });
@@ -49,3 +51,4 @@ $button.click(function(){
     // .parent()
     // .hasClass()
     // .prop()
+    // .change()
