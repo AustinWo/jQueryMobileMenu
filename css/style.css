@@ -64,3 +64,25 @@ p {
   color: #777;
 }
 /** Start Coding Here **/
+
+/*Modify CSS to hide links on small width and show button and select
+Also hides select and button on larger width and show's links */
+
+/*if its below 568 then hide ul menu and show select button*/
+@media (min-width: 320px) and (max-width: 568px) {
+  #menu ul {
+    display: none;
+  }
+}
+
+/*when get to min width of 568px, will hide select and button and show ul menu*/
+@media (min-width: 568px) {
+  #menu select, #menu button {
+    display: none;
+  }
+}
+
+
+
+
+
