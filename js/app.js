@@ -11,6 +11,13 @@ $('#menu a').each(function () {
   // Create an option
   var $option =$('<option></option>')
 
+
+  // Deal with selected options class depending on current page
+  if ($anchor.parent().hasClass('selected')) {
+    //only conincidence that class is selected and property is selected
+    $option.prop('selected', true);
+  }
+
   // option's value is the href of the link
   $option.val($anchor.attr('href'));
   // option's text is the text of the link
@@ -24,7 +31,6 @@ $('#menu a').each(function () {
 
 
 // Create button
-
 var $button = $('<button>Go</button>');
 $('#menu').append($button);
 // Blind click to button
@@ -35,4 +41,11 @@ $button.click(function(){
 
 
 
-// Deal with selected options depending on current page
+// ----------------------------------------
+// Lessons learned:
+  // New methods:
+    // .each()
+    // .var()
+    // .parent()
+    // .hasClass()
+    // .prop()
